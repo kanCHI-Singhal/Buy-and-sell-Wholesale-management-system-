@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Distributor page</title>
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-image: url(images/bg\ image.jpg);
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td {
+      border: 2px solid #eed7c8;
+      padding: 8px;
+      text-align: center;
+      color:white
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+      margin-top: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    nav{
+        display:flex;
+        justify-content:space-around;
+        height:100px;
+        background-color: #9b7934;
+        align-items:center;
+
+        }
+.left{
+ color: rgb(206, 211, 211);
+ font-size: 25px;
+}
+.right{
+  font-size: 15px;
+}
+
+        nav ul{ 
+            display:flex;
+            justify-content: center;
+           
+        }
+        nav ul li{
+            list-style: none;
+            margin: 30px 23px;
+        }
+
+        nav ul li a {
+            text-decoration:none; 
+            color: white;
+        }
+        nav ul li a:hover {
+            color:rgb(55, 43, 7) ;
+            font-size:2.04rem;
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+            color: white;
+    
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Buy and Sell..... </div>
+            
+            <div class="right"></div>
+            <ul>
+                <li> <a href="/">Home </a> </li>
+                <li> <a href="/">Sales report  </a> </li>
+                <li> <a href="/">Distributor details </a> </li>
+                <li> <a href="/">Store details </a> </li>
+            </ul>
+    
+        </nav>
+    </header>
+
+
+  <!-- Your page content goes here -->
+
+  
+
+
+
+    <h1> ADMINISTRATOR DASHBOARD</h1>
+
+    <br>
+    <h1>DISTRIBUTOR DETAILS</h1>
+    
+
+  <table>
+    <tr>
+      <td>DISTRIBUTOR ID</td>
+      <td>DISTRIBUTOR NAME</td>
+      <td>TYPE</td>
+      <td>WAREHOUSE LOCATION</td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td>Fritolay</td>
+      <td>Electrical</td>
+      <td>Delhi</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>Pepsico</td>
+      <td>Cooldrinkds</td>
+      <td>Hyd</td>
+    </tr>
+  </table>
+
+
+
+    <h1>NEW DISTRIBUTOR</h1>
+
+  <form>
+    <label for="distributorname">Distributor Name</label>
+    <input type="text" id="distributorname" name="distributorname" required>
+
+    <label for="distributortype">Distributor type</label>
+    <input type="text" id="distributortype" name="distributortype" required>
+
+    <label for="distributorlocation">Distributor location</label>
+    <input type="text" id="distributorlocation" name="distributorlocation" required>
+
+
+    <button type="submit">  Register new distributor</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+          nav{
+        display:flex;
+        justify-content:space-around;
+        height:100px;
+        background-color: #9b7934;
+        align-items:center;
+
+        }
+.left{
+ color: rgb(206, 211, 211);
+ font-size: 25px;
+}
+.right{
+  font-size: 15px;
+}
+
+        nav ul{ 
+            display:flex;
+            justify-content: center;
+           
+        }
+        nav ul li{
+            list-style: none;
+            margin: 30px 23px;
+        }
+
+        nav ul li a {
+            text-decoration:none; 
+            color: white;
+        }
+        nav ul li a:hover {
+            color:rgb(55, 43, 7) ;
+            font-size:2.04rem;
+        }
+        
+        #hero {
+    background-image: url("images/buyer\ final\ im.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+    color:#6e4c07
+}
+
+#hero h1 {
+    color: #9b7934;
+}
+
+
+     
+            /* .........itemdiv.................. */
+.itemdiv{
+    width: 98%;
+    height: 100vh;
+    margin: 1rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    border-radius: 10px; 
+}
+.h12,.h13{
+    font-size: 4rem;
+    color:#9b7934;
+}
+.h13{
+    margin-top: 4rem;
+}
+.item1,.item2{
+    display: flex;
+    margin: 1px;
+    width: 100%;
+    height: 75vh;
+    background-color: transparent;
+}
+.card1{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    background-color: transparent;
+    width: fit-content;
+    height: 80vh;
+    /* animation: bounce 2s infinite; */
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+.card,.cardo {
+    width: 30%;
+    height: 70%;
+    position: relative;
+    background-color: #a7f3d0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  .card{
+    animation: bounce 3s infinite;
+    /* animation: reverse; */
+  }
+  .cardo{
+    top:8rem;
+    animation: bounce 2s infinite;
+  }
+
+  .card:hover,.cardo:hover {
+    transform: scale(1.05);
+  }
+
+  .card img,.cardo img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card-content {
+    padding: 0 10px .5rem 10px;
+  }
+
+  .hr{
+    color: red;
+    background-color: aqua;
+    margin: 0 0 2px 0;
+  }
+  .card-content h2 {
+    margin-top: 0;
+    color: #020b07;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .card-content p {
+    color: #555;
+    height: 5rem;
+    font-family: cursive;
+  }
+  @media (max-width: 600px) {
+    .card,.cardo {
+      max-width: 100%;
+    }
+}  
+    /* .........itemdiv.................. */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Buy and Sell..... </div>
+            
+            <div class="right"></div>
+            <ul>
+                <li> <a href="/">Home </a> </li>
+                <li> <a href="/">About </a> </li>
+                <li> <a href="/">services </a> </li>
+                <li> <a href="/">Contact me </a> </li>
+            </ul>
+    
+        </nav>
+    </header>
+
+    <section id="hero">
+      <h4>Buy and sell </h4>
+     
+      <h1>Escape Competition through Authenticity>
+     
+  </section>
+
+
+
+<div class="itemdiv">
+    <h1 class="h12">What We Offer</h1>
+    <div class="item1">
+        <div class="card1">
+            <div class="card">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2022/12/WH/XT/GC/93569678/product-jpeg-500x500.jpg" alt="Card Image">
+                <div class="card-content">
+                  <h2>All Grocery products</h2><hr class="hr">
+                  <p>Grocery Items Wholesale Supplier, Packet, Organic </p> 
+                </div>
+            </div>
+            <div class="cardo">
+                <img src="https://4.imimg.com/data4/MK/GO/MY-5636766/organic-grocery-500x500.jpg">
+                <div class="card-content">
+                  <h2>Organic Grocery</h2>
+                  <hr class="hr">
+                  <p> Organic farmers and food producers grow and produce food without using synthetic chemicals such as pesticides and artificial fertilisers. 
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/coldstore image.png">
+                <div class="card-content">
+                  <h2> All Cold stores </h2>
+                  <hr class="hr">
+                  <p>Hanspro lifestyle is an online grocery store which provides facility of fresh and quality online grocery shopping from all the corners of the Allahabad </p> 
+                </div>
+            </div>
+            <div class="cardo">
+                <img src="images/cholocate images.png">
+                <div class="card-content">
+                  <h2> All chocolates</h2>
+                  <hr class="hr">
+                  <p>Gift a chocolate lover a Basket Dairy Milk Chocolate Arragement on Special Day. Get same day delivery from Winni.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/snaks iamge.png" alt="Card Image">
+                <div class="card-content">
+                  <h2> Kurkure is a brand of spiced crunchy puffcorn snacks .</h2>
+                  <hr class="hr">
+                  <p>Kurkure is a brand of spiced crunchy puffcorn snacks made up of rice, lentil and corn, owned by Lays. It was launched in 1999 in India.</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
